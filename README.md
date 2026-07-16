@@ -27,14 +27,8 @@ robots.txt / sitemap.xml   search-engine files
 ### Option B — Netlify / Vercel
 Drag-and-drop the repo folder into Netlify, or run `vercel` / connect the GitHub repo — both auto-detect this as a static site, no config needed.
 
-## Before going live — update the placeholder domain
+## Domain
 
-`index.html` currently references `https://tidehousecollective.com/` in a few places that need a real, final domain once one is chosen:
+The site currently lives at `https://tidehousecollective.netlify.app/`, and that's the URL used in `index.html`'s SEO tags (`<link rel="canonical">`, `og:url`, `og:image`, `twitter:image`, JSON-LD `url`), `robots.txt`, and `sitemap.xml`.
 
-- `<link rel="canonical">`
-- `og:url`, `og:image`, `twitter:image`
-- `robots.txt` (Sitemap line)
-- `sitemap.xml` (`<loc>`)
-- The JSON-LD structured data block (`url` field)
-
-Find-and-replace `tidehousecollective.com` with the real domain in those files once it's registered and pointed at the deployment.
+**Note:** `tidehousecollective.com` is already a registered domain, but it currently points to an unrelated GoDaddy Website Builder page — not this site. Don't reference that domain in any of the files above until that's sorted out (either by pointing its DNS at this deployment, or choosing a different domain). If/when a real production domain goes live, find-and-replace `tidehousecollective.netlify.app` with it in the files listed above.
