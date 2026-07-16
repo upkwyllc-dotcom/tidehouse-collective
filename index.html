@@ -275,8 +275,16 @@
   }
   .room:hover{transform:translateY(-4px);border-color:var(--brass);box-shadow:0 16px 32px -18px rgba(0,0,0,.28);}
   @media (hover:none){
-    .room:active{transform:translateY(-2px);border-color:var(--brass);}
+    .room:active{transform:translateY(-2px);border-color:var(--brass);box-shadow:0 16px 32px -18px rgba(0,0,0,.28);}
     .price-card:active{transform:translateY(-2px);}
+    .btn:active{transform:translateY(-2px);}
+    .btn-primary:active{background:var(--brass-2);box-shadow:0 10px 24px -10px color-mix(in srgb, var(--brass) 70%, transparent);}
+    .btn-ghost:active{border-color:var(--coral);color:var(--coral);}
+    .pillar:active{padding-left:.5rem;}
+    .scene-cta:active{background:rgba(10,20,32,.8);transform:translateY(-2px);}
+    .scene-btn:active{background:rgba(10,20,32,.8);transform:translateY(-2px);}
+    .carousel-arrow:active{border-color:var(--coral);color:var(--coral);transform:translateY(-2px);}
+    .foot-col a:active{color:var(--coral);}
   }
   .room .icon{width:2.6rem;height:2.6rem;color:var(--coral);}
   .room h3{margin-top:1.1rem;font-size:1.25rem;}
