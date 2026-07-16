@@ -29,6 +29,8 @@ Drag-and-drop the repo folder into Netlify, or run `vercel` / connect the GitHub
 
 ## Domain
 
-The site currently lives at `https://tidehousecollective.netlify.app/`, and that's the URL used in `index.html`'s SEO tags (`<link rel="canonical">`, `og:url`, `og:image`, `twitter:image`, JSON-LD `url`), `robots.txt`, and `sitemap.xml`.
+Live at `https://tidehousecollective.com/` (custom domain on Netlify, DNS at GoDaddy, HTTPS via Netlify's auto-provisioned Let's Encrypt cert — renews automatically). `www.tidehousecollective.com` redirects to the apex.
 
-**Note:** `tidehousecollective.com` is already a registered domain, but it currently points to an unrelated GoDaddy Website Builder page — not this site. Don't reference that domain in any of the files above until that's sorted out (either by pointing its DNS at this deployment, or choosing a different domain). If/when a real production domain goes live, find-and-replace `tidehousecollective.netlify.app` with it in the files listed above.
+The Netlify default URL, `https://tidehousecollective.netlify.app/`, still works and serves the same site — useful as a fallback if DNS or the custom domain ever has issues.
+
+`index.html`'s SEO tags (`<link rel="canonical">`, `og:url`, `og:image`, `twitter:image`, JSON-LD `url`), `robots.txt`, and `sitemap.xml` all reference `tidehousecollective.com`.

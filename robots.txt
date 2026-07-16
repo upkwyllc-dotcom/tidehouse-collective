@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tidehousecollective.netlify.app/sitemap.xml
+Sitemap: https://tidehousecollective.com/sitemap.xml
